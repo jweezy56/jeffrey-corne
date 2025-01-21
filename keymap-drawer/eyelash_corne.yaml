@@ -248,15 +248,17 @@ combos:
 - p: [43, 46]
   k: RETURN
   l: [QWERTY]
-- p: [22, 23]
+- p: [23, 24]
   k: END
   l: [QWERTY]
-- p: [4, 5]
+- p: [4, 3]
   k: PgUp
   l: [QWERTY]
-- p: [32, 33]
+- p: [32, 31]
   k: PgDn
   l: [QWERTY]
-- p: [17, 18]
+- p: [17, 16]
   k: HOME
   l: [QWERTY]
+- p: [25, 26]
+  k: APP
