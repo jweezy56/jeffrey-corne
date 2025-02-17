@@ -166,10 +166,10 @@
 
         Navigation {
             bindings = <
-&trans          &trans  &trans  &trans            &trans          &trans                    &trans          &trans  &kp HOME          &kp LS(LC(UP))    &kp END            &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans            &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &trans  &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LC(LS(RIGHT))  &trans  &trans
-&kp LEFT_GUI    &trans  &trans  &trans            &trans          &trans  &trans            &trans          &trans  &trans            &trans            &trans             &trans  &trans
-                                &kp LEFT_CONTROL  &kp BACKSPACE   &trans                                    &trans  &kp SPACE         &kp RIGHT_ALT
+&trans          &trans  &trans  &trans            &trans         &trans                    &trans          &trans  &kp HOME          &kp LS(LC(UP))    &kp END            &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans            &trans         &trans            &trans  &trans  &trans  &trans  &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LC(LS(RIGHT))  &trans  &trans
+&kp LEFT_GUI    &trans  &trans  &trans            &trans         &trans  &trans            &trans          &trans  &trans            &trans            &trans             &trans  &trans
+                                &kp LEFT_CONTROL  &kp BACKSPACE  &trans                                    &trans  &kp SPACE         &kp RIGHT_ALT
             >;
 
             label = "Navi";
