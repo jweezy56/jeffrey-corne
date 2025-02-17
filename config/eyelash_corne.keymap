@@ -104,6 +104,13 @@
             bindings = <&kp COMMA &kp N0 &kp N0 &kp N0>;
             label = "THOU";
         };
+
+        PwC: PwC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp I &kp N &kp G &kp O &kp F &kp LS(K) &kp I &kp N &kp G &kp S &kp N9 &kp N4 &kp N4>;
+            label = "PWC";
+        };
     };
 
     keymap {
@@ -124,10 +131,10 @@
         NUMBER {
             display-name = "NUMBER";
             bindings = <
-&trans  &trans  &trans  &trans      &kp ASTERISK  &kp PLUS                                        &mmv MOVE_UP                     &kp MINUS              &kp N7        &kp N8        &kp N9        &kp BACKSLASH  &trans
-&trans  &trans  &trans  &kp PERIOD  &kp EQUAL     &kp LEFT_PARENTHESIS            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans         &thou
-&trans  &trans  &trans  &trans      &kp SLASH     &kp LEFT_BRACKET      &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans         &trans
-                        &trans      &trans        &trans                                                                           &mo 4                  &kp NUMBER_0  &thou
+&trans  &kp EQUAL  &trans    &kp UP_ARROW  &kp ASTERISK  &kp PLUS                                        &mmv MOVE_UP                     &kp MINUS              &kp N7        &kp N8        &kp N9        &kp COMMA  &trans
+&trans  &kp ENTER  &kp LEFT  &kp DOWN      &kp RIGHT     &kp LEFT_PARENTHESIS            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans     &trans
+&trans  &trans     &trans    &trans        &kp SLASH     &kp LEFT_BRACKET      &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &thou      &trans
+                             &trans        &kp DEL       &trans                                                                           &mo 4                  &kp NUMBER_0  &kp PERIOD
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -148,10 +155,10 @@
         Bluetooth {
             display-name = "BLUETH";
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                                          &mmv MOVE_UP                     &trans           &trans           &trans           &trans           &trans  &bootloader
+&trans  &trans        &trans        &trans        &trans        &bootloader                                     &mmv MOVE_UP                     &trans           &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans  &bootloader
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL                    &mmv MOVE_DOWN                   &trans           &trans           &trans           &trans           &trans  &trans
-                                    &trans        &trans        &trans                                                                           &trans           &trans           &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL                    &mmv MOVE_DOWN                   &trans           &trans           &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &trans  &trans
+                                    &trans        &trans        &PwC                                                                             &trans           &trans           &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
@@ -159,10 +166,10 @@
 
         Navigation {
             bindings = <
-&trans          &trans  &trans  &trans            &trans          &trans                    &trans          &trans  &kp HOME   &kp UP         &kp END    &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans            &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN       &kp RIGHT  &trans  &trans
-&kp LEFT_GUI    &trans  &trans  &trans            &trans          &trans  &trans            &trans          &trans  &trans     &trans         &trans     &trans  &trans
-                                &kp LEFT_CONTROL  &kp BACKSPACE   &trans                                    &trans  &kp SPACE  &kp RIGHT_ALT
+&trans          &trans  &trans  &trans            &trans          &trans                    &trans          &trans  &kp HOME          &kp LS(LC(UP))    &kp END            &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans            &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &trans  &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LC(LS(RIGHT))  &trans  &trans
+&kp LEFT_GUI    &trans  &trans  &trans            &trans          &trans  &trans            &trans          &trans  &trans            &trans            &trans             &trans  &trans
+                                &kp LEFT_CONTROL  &kp BACKSPACE   &trans                                    &trans  &kp SPACE         &kp RIGHT_ALT
             >;
 
             label = "Navi";
