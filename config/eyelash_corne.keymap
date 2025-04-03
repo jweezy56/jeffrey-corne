@@ -5,8 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 /*
@@ -140,10 +138,10 @@
         NUMBER {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp EQUAL  &trans    &kp UP_ARROW  &kp ASTERISK  &kp PLUS                                        &mmv MOVE_UP                     &kp MINUS              &kp N7        &kp N8        &kp N9        &kp COMMA  &trans
-&trans  &kp ENTER  &kp LEFT  &kp DOWN      &kp RIGHT     &kp LEFT_PARENTHESIS            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans     &trans
-&trans  &trans     &trans    &trans        &kp SLASH     &kp LEFT_BRACKET      &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &thou      &trans
-                             &trans        &kp DEL       &trans                                                                           &mo 4                  &kp NUMBER_0  &kp PERIOD
+&kp LA(TAB)  &kp EQUAL  &trans            &kp UP_ARROW       &kp ASTERISK  &kp PLUS                                        &mmv MOVE_UP                     &kp MINUS              &kp N7              &kp N8        &kp N9        &kp COMMA  &trans
+&trans       &kp ENTER  &kp LEFT          &kp DOWN           &kp RIGHT     &kp LEFT_PARENTHESIS            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp NUMBER_4        &kp NUMBER_5  &kp NUMBER_6  &trans     &trans
+&trans       &trans     &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))  &kp SLASH     &kp LEFT_BRACKET      &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET      &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &thou      &trans
+                                          &trans             &kp DEL       &trans                                                                           &mo 4                  &mt SPACE NUMBER_0  &kp PERIOD
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -175,10 +173,10 @@
 
         Navigation {
             bindings = <
-&trans          &trans  &trans  &trans            &trans         &trans                    &trans          &trans  &kp HOME          &kp LS(LC(UP))    &kp END            &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans            &trans         &trans            &trans  &trans  &trans  &trans  &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LC(LS(RIGHT))  &trans  &trans
-&kp LEFT_GUI    &trans  &trans  &trans            &trans         &trans  &trans            &trans          &trans  &trans            &trans            &trans             &trans  &trans
-                                &kp LEFT_CONTROL  &kp BACKSPACE  &trans                                    &trans  &kp SPACE         &kp RIGHT_ALT
+&trans          &trans  &trans            &kp LC(LS(UP_ARROW))  &trans             &trans                    &trans          &trans  &kp HOME          &kp LS(LC(UP))    &kp END            &trans  &trans
+&kp LEFT_SHIFT  &trans  &kp LS(LC(LEFT))  &kp LC(LS(DOWN))      &kp LC(LS(RIGHT))  &trans            &trans  &trans  &trans  &trans  &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LC(LS(RIGHT))  &trans  &trans
+&kp LEFT_GUI    &trans  &trans            &trans                &trans             &trans  &trans            &trans          &trans  &trans            &trans            &trans             &trans  &trans
+                                          &kp LEFT_CONTROL      &kp BACKSPACE      &trans                                    &trans  &kp SPACE         &kp RIGHT_ALT
             >;
 
             label = "Navi";
