@@ -38,7 +38,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <350>;
         };
 
         bkdel: bkdel {
@@ -77,18 +77,6 @@
         oend {
             bindings = <&kp END>;
             key-positions = <23 24>;
-            layers = <0>;
-        };
-
-        Pageup {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <4 3>;
-            layers = <0>;
-        };
-
-        Pagedown {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <32 31>;
             layers = <0>;
         };
 
