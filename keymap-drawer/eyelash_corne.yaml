@@ -252,12 +252,6 @@ combos:
 - p: [23, 24]
   k: END
   l: [QWERTY]
-- p: [4, 3]
-  k: PgUp
-  l: [QWERTY]
-- p: [32, 31]
-  k: PgDn
-  l: [QWERTY]
 - p: [17, 16]
   k: HOME
   l: [QWERTY]
