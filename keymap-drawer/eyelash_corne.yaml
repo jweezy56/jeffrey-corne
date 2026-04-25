@@ -49,6 +49,55 @@ layers:
   - SYMBOL
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
+  MAC:
+  - {t: '$$mdi:keyboard-tab$$', h: BLUETH}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-up-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - '&td0'
+  - A
+  - S
+  - D
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - Alt+$$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Alt+$$mdi:arrow-right-bold$$
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-command$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:volume-off$$
+  - $$mdi:arrow-down-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - NUMBER
+  - SYMBOL
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-option$$
   NUMBER:
   - Alt+$$mdi:keyboard-tab$$
   - {t: '=', s: +}
@@ -243,55 +292,6 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {type: held}
   - {type: held}
-  - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-option$$
-  MAC:
-  - {t: '$$mdi:keyboard-tab$$', h: BLUETH}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
-  - A
-  - S
-  - D
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
-  - Alt+$$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Alt+$$mdi:arrow-right-bold$$
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-command$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:volume-off$$
-  - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - NUMBER
-  - SYMBOL
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
 combos:
