@@ -56,13 +56,13 @@ layers:
   - E
   - R
   - T
-  - $$mdi:arrow-up-bold$$
+  - Ctl+$$mdi:arrow-up-bold$$
   - Y
   - U
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: 'Alt+$$mdi:backspace$$', type: backspace}
   - '&td0'
   - A
   - S
@@ -85,7 +85,7 @@ layers:
   - V
   - B
   - $$mdi:volume-off$$
-  - $$mdi:arrow-down-bold$$
+  - {t: Ctl+`, s: Ctl+~}
   - N
   - M
   - {t: ',', s: <}
@@ -105,22 +105,22 @@ layers:
   - $$mdi:arrow-up-bold$$
   - '*'
   - +
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:arrow-up-bold$$
   - {t: '-', s: _}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: ',', s: <}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+`, s: Ctl+~}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - (
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - )
   - '4'
   - '5'
@@ -134,7 +134,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:arrow-down-bold$$
   - {t: ']', s: '}'}
   - '1'
   - '2'
